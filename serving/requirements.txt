@@ -1,0 +1,5 @@
+fastapi==0.118.3
+loguru==0.7.3
+pyyaml==6.0.3
+pyngrok
+vllm
