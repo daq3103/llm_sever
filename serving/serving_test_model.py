@@ -39,7 +39,7 @@ def health():
 async def chat(
     req: ChatRequest, api_key: Annotated[str, Header(..., alias="X-API-Key")]
 ):
-    logger.info(f"Hihi có thằng vừa gọi request")
+    logger.info(f"đang có yêu cầu từ người dùng")
     try:
         ps = [req.prompts] if isinstance(req.prompts, str) else req.prompts
         texts = await llm_model.generate(ps)
