@@ -7,7 +7,7 @@ from typing import Annotated
 
 app = FastAPI(
     title="LLM Block",
-    description="copyright: nnminh322@gmail.com",
+    description="ok",
     version="1.0.0 beta",
 )
 
