@@ -6,15 +6,12 @@ llm:
   temperature: 0.6
   top_p: 0.8
   max_tokens: 512
-  tensor_parallel_size: 1
+  tensor_parallel_size: 2
   max_model_len: 4096
-  dtype: "float16"
-  
+  dtype: "half"
   
 resource:
   gpu_memory_utilization: 0.8
   port: 8000
   host: "127.0.0.1"
-  swap_space: 4
-  disable_custom_all_reduce: true
-  disable_flex_attention: true
+  swap_space: 8
