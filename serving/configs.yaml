@@ -8,7 +8,7 @@ llm:
   max_tokens: 512
   tensor_parallel_size: 2
   max_model_len: 4096
-  dtype: "half"
+  dtype: "float16"
   
   
 resource:

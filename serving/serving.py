@@ -27,7 +27,7 @@ def run_vllm_server(config_path: str):
         
         "--port", str(resource_config.get("port", 8000)), 
         "--host", resource_config.get("host", "localhost"), 
-        # "--api-key", "nhatminh123"
+        "--disable-custom-all-reduce", 
     ]
 
     logger.info(f"Khởi chạy server vLLM: {' '.join(command)}")

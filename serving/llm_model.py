@@ -22,9 +22,7 @@ _engine_args = AsyncEngineArgs(
     dtype=config_llm["llm"]["dtype"],
     max_model_len=config_llm["llm"]["max_model_len"],
     gpu_memory_utilization=config_llm["resource"]["gpu_memory_utilization"],
-    swap_space=config_llm["resource"]["swap_space"],
-    disable_custom_all_reduce=False,
-    disable_flex_attention=False,
+    swap_space=config_llm["resource"]["swap_space"]
 )
 
 
@@ -65,4 +63,5 @@ class LocalLLM:
             else:
                 texts.append("")
 
-        return texts
+        return texts 
+ 
