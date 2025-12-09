@@ -63,5 +63,4 @@ class LocalLLM:
             else:
                 texts.append("")
 
-        return texts 
- 
+        return texts
