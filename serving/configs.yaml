@@ -15,6 +15,6 @@ resource:
   gpu_memory_utilization: 0.8
   port: 8000
   host: "127.0.0.1"
-  swap_space: 8
+  swap_space: 4
   disable_custom_all_reduce: true
   disable_flex_attention: true
