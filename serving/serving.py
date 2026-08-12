@@ -55,4 +55,5 @@ def run_vllm_server(config_path: str):
                 logger.info("Server đã bị kill.")
 
 if __name__ == "__main__":
-    run_vllm_server("./configs.yaml")
+    default_config = os.path.join(os.path.dirname(__file__), "configs.yaml")
+    run_vllm_server(default_config)

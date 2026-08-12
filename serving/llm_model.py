@@ -1,4 +1,5 @@
 # llm/llm_model.py
+import os
 import yaml
 from vllm.engine.async_llm_engine import AsyncLLMEngine
 from vllm.engine.arg_utils import AsyncEngineArgs
@@ -6,7 +7,8 @@ from vllm.utils import random_uuid
 from vllm.sampling_params import SamplingParams
 from loguru import logger
 
-with open("./configs.yaml", "r") as f:
+CONFIG_PATH = os.path.join(os.path.dirname(__file__), "configs.yaml")
+with open(CONFIG_PATH, "r") as f:
     config_llm = yaml.safe_load(f)
 
 

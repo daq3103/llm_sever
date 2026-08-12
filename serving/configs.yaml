@@ -6,7 +6,7 @@ llm:
   temperature: 0.6
   top_p: 0.8
   max_tokens: 512
-  tensor_parallel_size: 2
+  tensor_parallel_size: 1
   max_model_len: 4096
   dtype: "half"
   
