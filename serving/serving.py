@@ -23,7 +23,6 @@ def run_vllm_server(config_path: str):
         "--max-model-len", str(llm_config["max_model_len"]),
         
         "--gpu-memory-utilization", str(resource_config["gpu_memory_utilization"]),
-        "--swap-space", str(resource_config["swap_space"]),
         
         "--port", str(resource_config.get("port", 8000)), 
         "--host", resource_config.get("host", "localhost"), 
